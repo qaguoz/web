@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>自我介绍</title>
+		<link rel="stylesheet" href="css/new_file.css" />
+	</head>
+	<body>
+		<!--头部导航-->
+		<div id="header">
+			<div>
+			<div class="header">
+				<div class="header-log">
+					<img src="img/微信图片_20241226053024.jpg"
+                    <h4></h4> <h5>Hello！</h5>
+				</div>
+				<div class="header-nav">
+						<ul>
+							<li class="active">
+								<a href="1.html">首页</a>
+							</li>
+							<li>
+								<a href="">我的家乡</a>
+							</li>
+							<li>
+								<a href="3.html">视频集</a>
+							</li>
+							<li>
+								<a href="4.html">兴趣爱好</a>
+							</li>
+							<li>
+								<a href="5.html">更多</a>
+							</li>
+						</ul>
+				</div>
+			</div>
+		</div>
+		<!--css背景图-->
+		<style type="text/css">
+		body{
+			background-image:url("img/5882695c426bcaafa39a7ba7738acee.jpg");
+			background-repeat:repeat-x;
+			background-position:0px 0px;
+		}
+		</style>
+		   </div>
+		</div>
+		<div id="jiaxiang">
+			<div class="jiaxiang">
+				<h3>我的家乡—唐山迁安</h3>
+				<hr />
+			</div>
+			<div class="jiaxiangjieshao">
+				<p>迁安市位于燕山南麓滦河岸边。&nbsp;河北省唐山市代管县级市是河北省财政直管县扩权县总面积1277平方千米迁安市下辖4个街道，17镇户籍总人口77.6万人2023年GDP1269.9亿&nbsp;1949年8月，迁安县属河北省唐山专区。同年10月，中华人民共和国成立后，迁安县属唐山专区。此时迁安为农业县GDP1178万。1976年唐山大地震，迁安经济滞停。1978年唐山开始实行第一个10年恢复计划，迁安经济有所恢复，同年经济为1.16亿元人均200元。1992年迁安县顺利突破10亿元。直到1995年迁安县才正式摘掉贫困县的帽子，跌身河北省十强县市之首&nbsp;自此迁安县开始霸榜第一。1996年迁安县撤县立市，成为唐山第三个撤县设市地区。2000年迁安市GDP89.9亿&nbsp;迁安抓住首钢东迁的历史机遇，掀起了一次经济建设高潮。2000年后迁安九江钢铁，鑫达钢铁、燕山钢铁、轧一钢铁、松汀钢铁相继成立，为钢铁之城奠定基础。2001年GDP突破百亿，2005年突破200亿，2009年突破900亿，2013年突破千亿GDP总量1005.1亿，2013年突破千亿之后迁安政府逐渐意识迁安铁矿总有被挖空的一天，开始转型，钢铁厂大面积整合，铁粉厂相继关停，自此迁安向着绿色迁安进军。2014年开始向旅游城市发展，山叶口景区，白羊峪景区、挂云山景区、灵山景区等相继迎接旅客。钢厂的减少使得迁安的GDP，没有在千亿基础上增长。直到2020年迁安市转型基本完成&nbsp;迁安市再次进入千亿俱乐部，百强榜从14跌至32，但仍为河北省第一。迁安市是中国轩辕黄帝文化之乡，先后获评全国文明城市&nbsp;国家卫生城市&nbsp;国家园林城市&nbsp;中国宜居城市&nbsp;国家海绵城市&nbsp;国家节水型城市等荣誉称号。迁安市经济总量常年位居河北省榜首，是北方最大硅钢生产基地、亚洲最大单体线材生产基地、全国最大彩印包装基地、全国最大手工地毯加工基地。</p>
+			</div>
+			<div class="jiaxiangtupian">
+				<img src="img/89ce91392756c935b191d11af373e1a.jpg"
+			</div>
+			<div class="tupp">
+				<img src="img/c315376e6a59fc962f8d6d40bed3080.jpg"
+			</div>
+		</div>
+		<div>
+			<script>
+			    (function () {
+			        var a_idx = 0;
+			        window.onclick = function (event) {
+			            var a = new Array("❤2025幸福美满 ❤", "❤2025快乐健康❤", "❤2025事业有成❤", "❤2025心想事成❤");
+			            var heart = document.createElement("b"); //创建b元素
+			            heart.onselectstart = new Function('event.returnValue=false'); //防止拖动
+			
+			            document.body.appendChild(heart).innerHTML = a[a_idx]; //将b元素添加到页面上
+			            a_idx = (a_idx + 1) % a.length;
+			            heart.style.cssText = "position: fixed;left:-100%;"; //给p元素设置样式
+			
+			            var f = 50, // 字体大小
+			                x = event.clientX - f / 2 - 30, // 横坐标
+			                y = event.clientY - f, // 纵坐标
+			                c = randomColor(), // 随机颜色
+			                a = 1, // 透明度
+			                s = 0.8; // 放大缩小
+			
+			            var timer = setInterval(function () { //添加定时器
+			                if (a <= 0) {
+			                    document.body.removeChild(heart);
+			                    clearInterval(timer);
+			                } else {
+			                    heart.style.cssText = "font-size:16px;cursor: default;position: fixed;color:" +
+			                        c + ";left:" + x + "px;top:" + y + "px;opacity:" + a + ";transform:scale(" +
+			                        s + ");";
+			
+			                    y--;
+			                    a -= 0.016;
+			                    s += 0.002;
+			                }
+			            }, 15)
+			        }
+			        // 随机颜色
+			        function randomColor() {
+			            return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math
+			                .random() * 255)) + ")";
+			        }
+			    }());
+			</script>
+		</div>
+	</body>
+</html>

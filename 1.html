@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>自我介绍</title>
+		<link rel="stylesheet" href="css/new_file.css" />
+	</head>
+	<body>
+		<!--头部导航-->
+		<div id="header">
+			<div>
+			<div class="header">
+				<div class="header-log">
+					<img src="img/微信图片_20241226053024.jpg"
+                    <h4></h4> <h5>Hello！欢迎进入！</h5>
+				</div>
+				<div class="header-nav">
+						<ul>
+							<li class="active">
+								<a href="">首页</a>
+							</li>
+							<li>
+								<a href="2.html">我的家乡</a>
+							</li>
+							<li>
+								<a href="3.html">视频集</a>
+							</li>
+							<li>
+								<a href="4.html">兴趣爱好</a>
+							</li>
+							<li>
+								<a href="5.html">更多</a>
+							</li>
+						</ul>
+				</div>
+			</div>
+		</div>
+		<!--css背景图-->
+		<style type="text/css">
+		body{
+			background-image:url("img/5882695c426bcaafa39a7ba7738acee.jpg");
+			background-repeat:repeat-x;
+			background-position:0px 0px;
+		}
+		</style>
+		   </div>
+		</div>
+		<div id="jieshao">
+			<div class="jieshao">
+				<h6>基本介绍</h6>
+				<hr />
+			</div>
+			<div class="tupian">
+				<img src="img/9892790fb391dbf6d82157c334664b7.jpg"
+			</div>
+			<div class="wenzi">
+				<p>姓名: 郭子</p>
+				<p>学校: 成都大学</p>
+				<p>专业: 大数据技术</p>
+				<p>班级: 大数据一班</p>
+				<p>学号: 你猜去吧</p>
+				<p>家乡: 河北省唐山市</p>
+			</div>
+		</div>
+		<div class="neirong">
+			<p>何时葡萄先熟透 你要静候再静候</p>
+			<p>《致自己》</p>
+			<p>时光飞逝 曾以为遥远的2025也要到来了 2024年于我而言 是极具割裂感的一年 今年过得十分充实 同时也成长了很多 尝试了很多新鲜事物 也见识到了社会上的形形色色 
+我经常会发呆 想来想去总觉得自己应该越来越好才对 很难定义这一年真正拥有过什么 收获了什么 就觉得昏昏沉沉的一年就又要过去了 慢慢的我好像发现 我想说的话越来越少了 看透了许多 也看淡了很多 放心里的事情越来越多 无数个夜晚我都在认真的思考我这一辈子到底要成为怎样的人 过什么样的生活 人都是矛盾的 我也会对许多事情后悔 当然我记得为自己的选择买单 我开始尝试平静温和 坦然面对一切的人和事 没有结果的事情就好好睡一觉 不用责怪自己 你也是很用心才走到这里的
+曾经以为长大是一件美好的事情 现在才发现长大真是一件无人生还的事 每次希望自己长大的同时 却又想时间能够过的慢一点 直到我能为父母分担 能让父母心安 在成长时又不断去留恋过去的自己和过去的生活
+人与人之间走散也实在是容易 一年两年三年 听起来很长的时间 风一吹 也就散了 于是我也不再执着 那些无法割舍的 也被我寄托在了人生若只如初见这样的愿景中了
+慢慢的 我不再需要外界的认同 我明白自己才是最珍贵的 人各有各 不过尔尔 希望未来的我也拥有现在的勇气和乐观的心态
+就此停笔 致敬我的十九岁.</p>
+		</div>
+		<div>
+			<script>
+			    (function () {
+			        var a_idx = 0;
+			        window.onclick = function (event) {
+			            var a = new Array("❤2025幸福美满 ❤", "❤2025快乐健康❤", "❤2025事业有成❤", "❤2025心想事成❤");
+			            var heart = document.createElement("b"); //创建b元素
+			            heart.onselectstart = new Function('event.returnValue=false'); //防止拖动
+			
+			            document.body.appendChild(heart).innerHTML = a[a_idx]; //将b元素添加到页面上
+			            a_idx = (a_idx + 1) % a.length;
+			            heart.style.cssText = "position: fixed;left:-100%;"; //给p元素设置样式
+			
+			            var f = 50, // 字体大小
+			                x = event.clientX - f / 2 - 30, // 横坐标
+			                y = event.clientY - f, // 纵坐标
+			                c = randomColor(), // 随机颜色
+			                a = 1, // 透明度
+			                s = 0.8; // 放大缩小
+			
+			            var timer = setInterval(function () { //添加定时器
+			                if (a <= 0) {
+			                    document.body.removeChild(heart);
+			                    clearInterval(timer);
+			                } else {
+			                    heart.style.cssText = "font-size:16px;cursor: default;position: fixed;color:" +
+			                        c + ";left:" + x + "px;top:" + y + "px;opacity:" + a + ";transform:scale(" +
+			                        s + ");";
+			
+			                    y--;
+			                    a -= 0.016;
+			                    s += 0.002;
+			                }
+			            }, 15)
+			        }
+			        // 随机颜色
+			        function randomColor() {
+			            return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math
+			                .random() * 255)) + ")";
+			        }
+			    }());
+			</script>
+		</div>
+	</body>
+</html>
